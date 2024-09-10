@@ -5,5 +5,8 @@ class Book < ApplicationRecord
   # has_one :author
   # has_one :price
   # has_one :published_date
+
+  has_many :users, through: :user_books
+  has_many :user_books
   
 end
